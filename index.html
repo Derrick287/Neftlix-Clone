@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>home</title>
+</head>
+<body style ="background-color:black;">
+   <div class="top">
+      <div>
+         <img src="https://static.wikia.nocookie.net/dynastytv/images/5/54/Netflix_logo.png" height="50px"\>
+         <span id ="head"><a href="" class="button b1">Sign in</a></span>;
+      </div>
+      <div class="center">
+         <span id ="bigtext">See What 's next.</span><br>
+         <p>WATCH ANYWHERE ,CANCEL ANYTIME</p>
+         <a href =""class= "button b2">JOIN FREE FOR A MONTH</a>
+      </div>
+      <div>
+         <table width="100%" style="background-color:black";>
+            <tr>
+               <hr style="height: 6px; background-color: #222222; border: none;">
+
+            </tr>
+            <div class="center">
+               <span id ="bigtext">Enjoy on your TV</span><br>
+               <p style="font-size:1.5em;">Watch on Smart TVs,Play Station,Xbox,Chrome Cast,Apple TV,Blue Ray Players and more</p>
+               <img src="https://assets.nflxext.com/ffe/siteui/acquisition/common/transparent_1x1.png" aria-hidden="true" alt class="default-ltr-cache-a4hmbt ekwtkbw1">
+            </div>
+            <tr>
+               <hr style="height: 6px; background-color: #222222; border: none;">
+
+            </tr>
+            <div></div>
+            <tr>
+               <hr style="height: 6px; background-color: #222222; border: none;">
+
+            </tr>
+            <div></div>
+            <tr>
+               <hr style="height: 6px; background-color: #222222; border: none;">
+
+            </tr>
+            <div class="outer-block">
+      
+               <div class="inner-block">
+                  <h3>Frequently Asked Questions</h3>
+                  <ul class="column-list">
+                    <li class="list">
+                      <button class="block-button" onclick="toggleContent(1)">
+                        <span>What is Netflix?</span> 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon" data-name="Plus">
+                           <path id="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z" fill="currentColor"></path>
+                        </svg>
+                      </button>
+                      <div class="item-content" id="content1">
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                        <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+                      </div>
+                    </li>
+                    <li class="list">
+                      <button class="block-button" onclick="toggleContent(2)">
+                        <span>How much does Netflix cost?</span> 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon" data-name="Plus">
+                           <path id="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z" fill="currentColor"></path>
+                        </svg>
+                      </button>
+                      <div class="item-content" id="content2">
+                        <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from Ksh 200 to Ksh 1,100 a month. No extra costs, no contracts.</p> 
+                      </div>
+                    </li>
+                    <li class="list">
+                      <button class="block-button" onclick="toggleContent(3)">
+                        <span>Where can I watch?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon" data-name="Plus">
+                           <path id="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z" fill="currentColor"></path>
+                        </svg>
+                     </button>
+                      <div class="item-content" id="content3">
+                        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                        <p>You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p> 
+                      </div>
+                    </li>
+                    <li class="list">
+                      <button class="block-button" onclick="toggleContent(4)">
+                        <span>How do I cancel?</span> 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon" data-name="Plus">
+                           <path id="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z" fill="currentColor"></path>
+                        </svg>
+                      </button>
+                      <div class="item-content" id="content4">
+                        <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                      </div>
+                    </li>
+                    <li class="list">
+                     <button class="block-button" onclick="toggleContent(5)">
+                        <span>What can I watch on Netflix?</span> 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon" data-name="Plus">
+                           <path id="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z" fill="currentColor"></path>
+                        </svg>
+                     </button>
+                     <div class="item-content" id="content5">
+                       <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                     </div>
+                    </li>
+                    <li class="list">
+                     <button class="block-button" onclick="toggleContent(6)">
+                        <span>Is Netflix good for kids?</span> 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon" data-name="Plus">
+                           <path id="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z" fill="currentColor"></path>
+                        </svg>
+                     </button>
+                     <div class="item-content" id="content6">
+                       <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.</p>
+                       <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                     </div>
+                    </li>
+                  </ul>
+                  <div>
+                     <form action="" method="post">
+                        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                        <div class="input-container">
+                           <input autocomplete="email" minlength="5" maxlength="50" type="email" id="6c2c3a839d9b0" name="email" data-uia="field-email" placeholder="Enter your email address" class="email">
+                           <button class="get-started-button">
+                              <h3>Get Started</h3>
+                              <span>
+                                 <svg width="14" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" class="default-ltr-cache-0 e1mhci4z1" data-name="ChevronRight" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path>
+                                 </svg>
+                              </span>
+                           </button>
+                         </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         
+            <footer>
+               <div class="about">
+                  <div class="about-column">
+                     <a href="#">Question? Contact us.</a>
+                  </div>
+                  <div class="about-column">
+                     <div class="grid-container">
+                        <ul class="about-list">
+                          <li><a href="" class="about-item">FAQ</a></li>
+                          <li><a href="" class="about-item">Help Center</a></li>
+                          <li><a href="" class="about-item">Account</a></li>
+                          <li><a href="" class="about-item">Media Center</a></li>
+                          <li><a href="" class="about-item">Investor Relations</a></li>
+                          <li><a href="" class="about-item">Jobs</a></li>
+                          <li><a href="" class="about-item">Ways to Watch</a></li>
+                          <li><a href="" class="about-item">Terms of Use</a></li>
+                          <li><a href="" class="about-item">Privacy</a></li>
+                          <li><a href="" class="about-item">Cookie Preferences</a></li>
+                          <li><a href="" class="about-item">Corporate Information</a></li>
+                          <li><a href="" class="about-item">Contact Us</a></li>
+                          <li><a href="" class="about-item">Speed Test</a></li>
+                          <li><a href="" class="about-item">Legal Notices</a></li>
+                          <li><a href="" class="about-item">Only on Netflix</a></li>
+                        </ul>
+                     </div>             
+                  </div>
+                  <div class="about-column">
+                     <p data-style="brandLocation" class="">Netflix Kenya</p>
+                  </div>
+               </div>
+            </footer>
+            <tr>
+               <hr style="height: 6px; background-color: #222222; border: none;">
+
+            </tr>
+         </table>
+      </div>
+   </div>
+</body>
+</html>
