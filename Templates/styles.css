@@ -188,9 +188,8 @@ h3{
   justify-content: flex-start;
 }
 
-
-
 .tv-watch-kids{
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -202,6 +201,21 @@ h3{
   min-height: 70vh;
   background-color: black;
 }
+
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+.video-container video {
+  top: 0;
+  left: 0;
+  width: 66.666667%;
+  object-fit: cover;
+  opacity: 0.8; /* Adjust the opacity as needed */
+  z-index: -1;
+}
+
 
 border-bottom{
   border-bottom: 10px;
