@@ -4,13 +4,7 @@ body{
   background-attachment:fixed;
   background-size:100% 100%;
   font-family : Arial,Helvetica, sans-serif;
-}
-body{
-background-image:linear-gradient(65deg,black,transparent),url('https://images.ctfassets.net/4cd45et68cgf/5y7i4snzpqkr2oHRCRAkN4/c144749aa0df745e43367744af149f66/Android_Collage_1920x1080__UCAN_En.jpg');
-  background-repeat : no-repeat;
-  background-attachment : fixed;
-  background-size : 100% 100%;
-  font-family : Arial, Helvetica,sans-serif;
+
 }
 span{
   display:inline
@@ -182,15 +176,70 @@ h3{
 }
 .about a{
   color: #fff;
-  
 }
 .about-column{
-
-
   margin-bottom: 10px;
-
 }
 .grid-container{
   margin-left: 0%;
   justify-content: flex-start;
+}
+
+
+
+.tv-watch-kids{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5%;
+  justify-content: space-between;
+  border-color: rgb(246, 88, 9);
+  border-bottom-width: 98px;
+  color: white;
+  min-height: 70vh;
+  background-color: black;
+}
+
+border-bottom{
+  border-bottom: 10px;
+  border-color: red;
+}
+
+.image-a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+
+
+.image-b{
+  flex-direction: column;
+  text-align: center;
+}
+
+.font-margin{
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.images{
+  width: 66.666667%;
+}
+
+
+
+
+
+.items-center{
+  align-items: center;
+}
+
+.order-2{
+  order: 2;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
