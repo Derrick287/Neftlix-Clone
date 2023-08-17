@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Netflix</title>
+   <style>
+      .navbar {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 20px;
+         background-color: transparent;
+      }
+      .button{
+         background-color:red;
+         border:none;
+         color:white;
+         padding:15px 32px;
+         text-align:center;
+         text-decoration:none;
+         display:inline-block;
+         font-size:14px;
+         border-radius:5px;
+         }
+      .b1{
+         padding:10px 20px;
+      }
+   </style>
+</head>
+<body>
+   <nav class="navbar">
+      <a href="{% url 'home' %}"><img src="" alt="Netflix Logo" class="logo"></a>
+      <span id ="sign-in"><a href="{% url 'login' %}" class="button b1">Sign in</a></span>
+   </nav>
+   {% block content %}
+
+   {% endblock content %}
+</body>
+</html>

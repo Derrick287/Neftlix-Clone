@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Profile</title>
+    <link rel="stylesheet" href="styleLogSign.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="{% static 'images/netflix-logo.png' %}" alt="Netflix Logo" class="logo">
+            <a href="#" class="sign-out">Sign Out</a>
+        </div>
+        <div class="profile-content">
+            <div class="profile-image">
+                <img src="{% static 'images/profile.jpg' %}" alt="Profile Picture" class="avatar">
+            </div>
+            <div class="profile-details">
+                <h1 class="profile-name">John Doe</h1>
+                <p class="profile-email">johndoe@example.com</p>
+                <button class="update-button">Update Profile</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

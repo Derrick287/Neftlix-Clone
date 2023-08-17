@@ -1,0 +1,101 @@
+
+{% block content %}
+   <head>
+      <style>
+         /* Login & signup page */
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+         body {
+            background-color: #141414;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+         }
+
+         .login-container {
+            background-image: url('../images/background.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+         }
+
+         .login-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 5px;
+            text-align: center;
+            width: 300px;
+         }
+
+         .logo {
+            width: 100px;
+            margin-bottom: 20px;
+         }
+
+
+         .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #e50914;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            font-size: 16px;
+         }
+
+         .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #e50914;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+         }
+
+         .remember-me {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px;
+         }
+
+         .need-help {
+            display: block;
+            margin-top: 20px;
+            color: #b3b3b3;
+            text-decoration: none;
+         }
+
+
+      </style>
+   </head>
+   <body>
+      <div class="login-container">
+         <div class="login-box">
+               <a href="{% url 'home' %}"><img src="" alt="Netflix Logo" class="logo"></a>
+               <form method="POST">
+                  <input type="email" name="email" placeholder="Email" class="input-field" required>
+                  <input type="password" name="password" placeholder="Password" class="input-field" required>
+                  <button type="submit" class="login-button">Sign In</button>
+                  <label class="remember-me">
+                     <input type="checkbox" name="remember">
+                      Remember me.
+                  </label>
+                  <small><a href="#" class="need-help">Forgoten Password? </a></small>
+               </form>
+         </div>
+      </div>
+   </body>
+{% endblock content %}

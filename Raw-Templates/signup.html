@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Login</title>
+    <link rel="stylesheet" href="styleLogSign.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="{% static 'images/netflix-logo.png' %}" alt="Netflix Logo" class="logo">
+            <form method="POST">
+                <input type="email" name="email" placeholder="Email" class="input-field" required>
+                <input type="password" name="password" placeholder="Password" class="input-field" required>
+                <button type="submit" class="login-button">Sign Up</button>
+                <label class="remember-me">
+                    <input type="checkbox" name="remember">
+                    Remember me
+                </label>
+                <a href="#" class="need-help">Need help?</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

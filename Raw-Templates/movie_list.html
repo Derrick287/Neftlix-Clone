@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Movie List</title>
+    <link rel="stylesheet" href="styleLogSign.css">
+</head>
+<body>
+    <div class="movie-list-container">
+        <div class="movie-list-header">
+            <img src="{% static 'images/netflix-logo.png' %}" alt="Netflix Logo" class="logo">
+            <a href="#" class="sign-out">Sign Out</a>
+        </div>
+        <div class="movie-list-content">
+            <div class="filter-bar">
+                <select id="genre-filter">
+                    <option value="all">All Genres</option>
+                    <option value="action">Action</option>
+                    <option value="drama">Drama</option>
+                    <option value="comedy">Comedy</option>
+                </select>
+                <input type="text" id="search-input" placeholder="Search movies">
+            </div>
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <img src="{% static 'images/movie1.jpg' %}" alt="Movie 1" class="movie-poster">
+                    <h3 class="movie-title">Movie 1</h3>
+                </div>
+                <!-- Repeat similar structure for other movies -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

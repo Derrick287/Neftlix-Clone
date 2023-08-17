@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Movie Details</title>
+    <link rel="stylesheet" href="styleLogSign.css">
+</head>
+<body>
+    <div class="movie-details-container">
+        <div class="movie-details-header">
+            <img src="{% static 'images/netflix-logo.png' %}" alt="Netflix Logo" class="logo">
+            <a href="#" class="sign-out">Sign Out</a>
+        </div>
+        <div class="movie-details-content">
+            <div class="movie-media">
+                <video controls>
+                    <source src="{% static 'videos/movie.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="movie-info">
+                <h1 class="movie-title">Movie Title</h1>
+                <p class="movie-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit tortor at pharetra.
+                </p>
+                <h2 class="cast-heading">Cast</h2>
+                <ul class="cast-list">
+                    <li>Actor 1</li>
+                    <li>Actor 2</li>
+                    <li>Actor 3</li>
+                </ul>
+                <h2 class="related-heading">Related Movies</h2>
+                <div class="related-movies">
+                    <div class="related-movie">
+                        <img src="{% static 'images/related-movie1.jpg' %}" alt="Related Movie" class="related-poster">
+                        <p class="related-title">Related Movie 1</p>
+                    </div>
+                    <div class="related-movie">
+                        <img src="{% static 'images/related-movie2.jpg' %}" alt="Related Movie" class="related-poster">
+                        <p class="related-title">Related Movie 2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
